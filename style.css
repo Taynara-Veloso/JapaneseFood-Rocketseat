@@ -1,0 +1,86 @@
+:root {
+  --red-100: #FF5563;
+  --white-100: #FFFFFF;
+  --black-900: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Spectral";
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.container{
+  background: var(--black-900);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 100vw;
+  height: 100vh;
+}
+
+.container .container_content{
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  top: 15%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .content_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .content_title .title{
+  font-size: 5rem;
+  font-family: "Beth Ellen", sans-serif;
+}
+
+.container .content_title .title, 
+.paragraph{
+  color: var(--white-100);
+}
+
+.container .content_title .paragraph{
+  font-size: 1.25rem;
+  width: 22.875rem;
+  text-align: center;
+  margin-bottom: 4.5rem;
+}
+
+.container .content_title .title span{
+  color: var(--red-100);
+
+}
+
+.background a{
+  background-color: #FF5563;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  
+  &:hover {
+    background-color: #ff3e4e;
+  }
+}
+
+#bg-image {
+  position: relative;
+  inset: 0;
+  transform: scale(0.7);
+  opacity: 0.3;
+  z-index: 0;
+}
