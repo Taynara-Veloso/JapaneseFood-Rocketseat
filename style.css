@@ -30,7 +30,7 @@ body {
   position: absolute;
   z-index: 1;
   display: flex;
-  top: 15%;
+  top: 18%;
   flex-direction: column;
   align-items: center;
 }
@@ -84,3 +84,34 @@ body {
   opacity: 0.3;
   z-index: 0;
 }
+
+/* ANIMATION */
+
+h1, p, a {
+  animation: appear 1s backwards;
+}
+
+h1 {
+  animation-delay: 0.2s;
+}
+
+p {
+  animation-delay: 0.8s;
+}
+
+a {
+  animation-delay: 1.6s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+}
+
+/* RESPONSIVE */
+@media (width < 40rem) {
+  html {
+    font-size: 70%;
+  }
+} 
